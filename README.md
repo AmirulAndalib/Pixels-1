@@ -24,7 +24,7 @@ ADB Procedures using a PC:
 * Go to _Settings_ > _About phone_ > _Software information_ and tap _Build number_ multiple times
   until the developer mode is enabled.
 
-![about phone](about_phone2.jpg)
+![about phone](readme-res/about_phone2.jpg)
 </details>
 
 ### 2. Enable USB debugging
@@ -34,7 +34,7 @@ ADB Procedures using a PC:
 * Go to _Settings_ > _Developer options_ (can be _Settings_ > _System_ > _Developer options_ on
   older android versions), scroll down and find _USB debugging_ option.
 
-![adb](usb_debugging.jpg)
+![adb](readme-res/usb_debugging.jpg)
 
 #### Notes for some devices like MIUI:
 
@@ -56,7 +56,8 @@ ADB Procedures using a PC:
 
 </details>
 
-### 4. Navigate to inside of `platform-tools` folder that you extracted on  Windows Explorer or Finder(macOS)
+### 4. Navigate to inside of
+`platform-tools` folder that you extracted on  Windows Explorer or Finder(macOS)
 
 ### 5. Opening the command-line interface
 
@@ -67,7 +68,7 @@ ADB Procedures using a PC:
 * Type `cmd` in the address bar and press enter. This will open the Windows Command Prompt
   application.
 
-![opening_cmd](opening_cmd.png)
+![opening_cmd](readme-res/opening_cmd.png)
 
 #### For MacOS: Open up Terminal
 
@@ -91,14 +92,14 @@ ADB Procedures using a PC:
 * You may check _Always allow from this computer_ (Please check note at the end
   of this tutorial about keeping the USB debugging enabled).
 
-![adb prompt](usb_debugging_prompt.jpg)
+![adb prompt](readme-res/usb_debugging_prompt.jpg)
 
 * Check the connection by entering the following command followed by an enter. It should show your
   device ID if successfully connected.
 
 > ```adb devices```
 
-![6](adb_devices.png)
+![6](readme-res/adb_devices.png)
 
 #### For macOS:  ```./adb devices ```
 
@@ -120,12 +121,14 @@ ADB Procedures using a PC:
 
 * If it prompts `adb.exe: more than one device/emulator...`, execute the following instead:
 
-> ```adb -s [device Id shown in step 6] shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
+>
+```adb -s [device Id shown in step 6] shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
 
 
-![6](write_secure_settings.png)
+![6](readme-res/write_secure_settings.png)
 
-#### For macOS: ```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
+#### For macOS:
+```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
 
 #### Note for MIUI, OnePlus and some other devices
 If you get `java.lang.SecurityException: grantRuntimePermission` Error, follow these steps:
