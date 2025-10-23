@@ -1,3 +1,5 @@
+[English](README.md) | [Español](docs/es/README.md) | [Português](docs/pt/README.md) | [हिन्दी](docs/hi/README.md) | [Bahasa Indonesia](docs/in/README.md) | [العربية](docs/ar/README.md)
+
 # Pixels - Smart Resolution and DPI Changer
 
 * [Google Play Store](https://play.google.com/store/apps/details?id=com.tribalfs.pixels)
@@ -6,7 +8,7 @@ Pixels needs **WRITE_SECURE_SETTINGS** permission in order to work (this is NOT 
 
 ----------------------
 
-### TLDR
+### TL;DR
 
 * Execute `adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS`
 * If using an android terminal app with elevated permission,
@@ -39,8 +41,9 @@ ADB Procedures using a PC:
 #### Notes for some devices like MIUI:
 
 * Turn on _USB debugging for Security Settings_ also if present in Developer option.
-  
+
 * Turn on _Disable permission Monitoring_ option if present in Developer options. Reboot is needed.
+
 </details>
 
 ### 3. Download ADB on your computer
@@ -115,7 +118,8 @@ ADB Procedures using a PC:
 
   <details>
 
-* When successfully connected, enter the following command and press enter. You can copy the command below. If the command is executed properly, it will return blank.
+* When successfully connected, enter the following command and press enter. You can copy the command
+  below. If the command is executed properly, it will return blank.
 
 > ```adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
 
@@ -124,14 +128,16 @@ ADB Procedures using a PC:
 >
 ```adb -s [device Id shown in step 6] shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS```
 
-
 ![6](readme-res/write_secure_settings.png)
 
 #### For macOS:
+
 ```./adb shell pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS ```
 
 #### Note for MIUI, OnePlus and some other devices
+
 If you get `java.lang.SecurityException: grantRuntimePermission` Error, follow these steps:
+
 1. Go to _Settings_ > _Developer options_ (can be _Settings_ > _System_ > _Developer options_
 2. Scroll down and enable **USB Debugging (Security Settings)**
 3. If any _Caution Dialogue_ appears, follow it's steps to proceed.
@@ -165,14 +171,16 @@ ADB Procedures Without Using a PC:
 * You can install [LADB](https://github.com/tribalfs/LADB/releases), follow its setup guide and
   execute the following command:
 
-   `pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS`
-  
-  Note: This requires connecting to a wifi network.  If having a java.lang.SecurityException, check notes in step 2 above.
+  `pm grant com.tribalfs.pixels android.permission.WRITE_SECURE_SETTINGS`
+
+  Note: This requires connecting to a wifi network. If having a java.lang.SecurityException, check
+  notes in step 2 above.
 
 * [VIDEO WALKTHROUGH](https://youtu.be/gdPHB9ru238)
 
-  Important: LADB sometimes it requires a few try to make it work and it may not work on all devices. 
-    
+  Important: LADB sometimes it requires a few try to make it work and it may not work on all
+  devices.
+
 </details>
 
 
